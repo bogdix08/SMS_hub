@@ -1,0 +1,41 @@
+#content{
+	position:relative;
+}
+
+#container{
+	width:50%;
+	margin-right:0;
+}
+#details{
+position: absolute;
+width: 48%;
+top: 0;
+height: 100%;
+text-align: left;
+border: 2px solid #56ccda;
+border-radius: 20px;
+padding: 5% 0 0 8%;
+line-height: 2.5;
+}
+
+.highcharts-container{
+	border: 2px solid #56ccda;
+	border-radius:20px;
+}
+
+.details-title{
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-3vw;
+	position: relative;
+	left: -2vw;
+}
+
+#details-content{
+	margin-top:3vw;
+}
+.highcharts-title{
+	font-size:24px !important;
+	font-family: Raleway,sans-serif;
+}

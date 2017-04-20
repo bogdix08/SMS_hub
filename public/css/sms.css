@@ -1,0 +1,171 @@
+.input_container{
+	position:relative;
+	width:80% !important;
+}
+
+.sms_form{
+	margin-left: 100px;
+	float: left;
+}
+.sms_par{
+	clear: both;
+	text-align:center;
+}
+input{
+	color: AliceBlue ;
+	padding: 12px;
+}
+textarea{
+	color: AliceBlue ;
+	padding: 12px;
+	resize:horizontal;
+}
+.contact_list{
+	margin-left: 170px;
+	border-left: 1px solid gray;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 1em;
+	float: right;
+}
+.contact_name{
+	margin-left: 55px;
+}
+#country_input{
+	height:0;
+	opacity:0;
+}
+#country_menu{
+	position: absolute;
+	z-index: 2;
+	list-style: none;
+	text-align: left;
+	padding: 0;
+	margin: 0 0 0 -1px;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+	background-color: white;
+	border: 1px solid #CCC;
+	white-space: nowrap;
+	max-height: 200px;
+	overflow-y: scroll;
+}
+#phone_number_field,#textarea_field{
+	z-index:0;
+}
+#phone_number_error{
+	color:red;
+	font-family:Georgia;
+}
+#message_lenght_field{
+	position: relative;
+	left: 500px
+}
+/*table*/		
+#outbox {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 100%;
+}	
+
+#outbox th {
+	background: linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+#outbox th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+#outbox th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+#outbox th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+#outbox td {
+	padding: 10px 15px 10px 15px !important;
+	position: relative;
+	transition: all 300ms; 	
+	max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#outbox td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+#outbox td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+#outbox tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+#outbox tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+#outbox tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}
+#outbox tr:nth-child(2n){
+	background: linear-gradient(to right, rgba(118,174,239,1) 3%, rgba(118,174,239,0.13) 73%, rgba(118,174,239,0.13) 76%, rgba(173,210,245,0.13) 81%, rgba(118,174,239,0.13) 82%);
+}
+#outbox tr:nth-child(2n+1){
+	background: linear-gradient(to left, rgba(118,174,239,1) 3%, rgba(118,174,239,0.13) 73%, rgba(118,174,239,0.13) 76%, rgba(173,210,245,0.13) 81%, rgba(118,174,239,0.13) 82%);
+}		
+.sms_col{
+transition:transform 1s;
+width:10%;
+}
+.sms_col:hover{
+	font-weight:bold;
+	z-index:1;
+	overflow:visible;
+	background-color:#87CEFA;
+	transform:scale(1.5,1.5);
+}
+.name_col{
+	width: 2%;
+	min-width: 15px;
+}
+.number_col{
+	width: 2%;
+	min-width: 15px;
+}
+.trash_col{
+	width: 1%;
+	min-width: 15px;
+}
+.date_col{
+	width: 2%;
+	min-width: 15px;
+}
